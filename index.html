@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr" class="lenis lenis-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2G-INOX | Construction Métallique & Serrurerie</title>
+    <meta name="description" content="Expertise technique et intervention rapide pour professionnels et particuliers en Suisse Romande." />
+    
+    <!-- Fonts: Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Manrope', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                dark: '#050505',
+                gray: '#0A0A0A',
+                surface: '#0F0F0F',
+                accent: '#ff8c00', // Orange
+                light: '#F5F5F5',
+                muted: '#737373',
+                border: '#262626'
+              }
+            },
+            transitionTimingFunction: {
+              'luxury': 'cubic-bezier(0.16, 1, 0.3, 1)',
+              'sharp': 'cubic-bezier(0.85, 0, 0.15, 1)',
+            },
+            transitionDuration: {
+              '1500': '1500ms',
+              '2000': '2000ms',
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(40px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Lenis smooth scroll */
+      html.lenis, html.lenis body {
+        height: auto;
+      }
+      
+      .lenis.lenis-smooth {
+        scroll-behavior: auto !important;
+      }
+      
+      .lenis.lenis-smooth [data-lenis-prevent] {
+        overscroll-behavior: contain;
+      }
+      
+      .lenis.lenis-stopped {
+        overflow: hidden;
+      }
+      
+      .lenis.lenis-scrolling iframe {
+        pointer-events: none;
+      }
+
+      body {
+        background-color: #050505;
+        color: #F5F5F5;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+      
+      /* Custom scrollbar for dark theme */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050505; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333; 
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+
+      ::selection {
+        background: #D97706;
+        color: white;
+      }
+
+      /* Utilities for sophisticated animations */
+      .mask-text {
+        overflow: hidden;
+        display: block;
+      }
+      
+      .mask-text-content {
+        display: block;
+        transform: translateY(100%);
+        transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      
+      .is-visible .mask-text-content {
+        transform: translateY(0);
+      }
+
+      .draw-line-y {
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      
+      .is-visible .draw-line-y {
+        transform: scaleY(1);
+      }
+      
+      .draw-line-x {
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      
+      .is-visible .draw-line-x {
+        transform: scaleX(1);
+      }
+
+      /* Stagger delays */
+      .delay-100 { transition-delay: 100ms; }
+      .delay-200 { transition-delay: 200ms; }
+      .delay-300 { transition-delay: 300ms; }
+      .delay-500 { transition-delay: 500ms; }
+      .delay-700 { transition-delay: 700ms; }
+      
+      /* Image curtain reveal */
+      .curtain-reveal {
+        clip-path: inset(0 100% 0 0);
+        transition: clip-path 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .is-visible .curtain-reveal {
+        clip-path: inset(0 0 0 0);
+      }
+    </style>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://aistudiocdn.com/react@^19.2.0",
+          "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+          "react/": "https://aistudiocdn.com/react@^19.2.0/",
+          "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+        }
+      }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
