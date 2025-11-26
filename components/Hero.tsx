@@ -39,7 +39,8 @@ export const Hero: React.FC = () => {
               minHeight: '100%',
               width: 'auto',
               height: 'auto',
-              aspectRatio: '16/9'
+              aspectRatio: '16/9',
+              filter: 'grayscale(100%)'
             }}
             allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
             allowFullScreen
