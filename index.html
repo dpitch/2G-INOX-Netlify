@@ -153,29 +153,6 @@
       .is-visible .curtain-reveal {
         clip-path: inset(0 0 0 0);
       }
-
-      /* Hide site on mobile and tablet */
-      @media (max-width: 1023px) {
-        #root {
-          display: none !important;
-        }
-        
-        body::before {
-          content: 'Ce site n\'est pas encore disponible sur mobile et tablette. Veuillez consulter le site depuis un ordinateur.';
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 100vh;
-          width: 100vw;
-          background-color: #050505;
-          color: #F5F5F5;
-          font-family: 'Manrope', sans-serif;
-          font-size: 18px;
-          text-align: center;
-          padding: 20px;
-          box-sizing: border-box;
-        }
-      }
     </style>
     <script type="importmap">
       {
