@@ -28,7 +28,7 @@ export const WhyUs: React.FC = () => {
         </div>
 
         {/* Content Side */}
-        <div className="p-6 md:p-10 lg:p-12 flex flex-col justify-center border-l border-white/5">
+        <div className="px-4 md:px-6 lg:px-12 py-16 md:py-24 flex flex-col justify-center border-l border-white/5">
           <div className={`mb-20 transition-all duration-1000 delay-300 ease-luxury ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="text-xs font-bold text-brand-accent uppercase tracking-[0.2em] mb-6">L'engagement 2G Inox</h2>
             <h3 className="text-3xl md:text-4xl font-medium text-white leading-tight">
