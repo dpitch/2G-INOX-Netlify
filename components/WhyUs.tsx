@@ -21,14 +21,14 @@ export const WhyUs: React.FC = () => {
             <div className="absolute inset-0 bg-brand-dark/20"></div>
           </div>
           
-          <div className={`absolute bottom-0 left-0 p-12 bg-brand-dark/90 backdrop-blur-sm border-t border-r border-white/10 max-w-md z-30 transition-all duration-1000 delay-700 ease-luxury ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
+          <div className={`absolute bottom-0 left-0 p-6 md:p-8 lg:p-10 bg-brand-dark/90 backdrop-blur-sm border-t border-r border-white/10 max-w-md z-30 transition-all duration-1000 delay-700 ease-luxury ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <p className="text-6xl font-light text-white mb-2">15<span className="text-brand-accent">+</span></p>
             <p className="text-xs font-mono text-brand-muted uppercase tracking-wider">Années d'expérience cumulée <br/>Métallurgie de précision</p>
           </div>
         </div>
 
         {/* Content Side */}
-        <div className="p-12 lg:p-24 flex flex-col justify-center border-l border-white/5">
+        <div className="p-6 md:p-10 lg:p-12 flex flex-col justify-center border-l border-white/5">
           <div className={`mb-20 transition-all duration-1000 delay-300 ease-luxury ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h2 className="text-xs font-bold text-brand-accent uppercase tracking-[0.2em] mb-6">L'engagement 2G Inox</h2>
             <h3 className="text-3xl md:text-4xl font-medium text-white leading-tight">
