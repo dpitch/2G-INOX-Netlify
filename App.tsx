@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
-import { HomePage } from './pages';
+import { HomePage, ServicesPage } from './pages';
 
 function App() {
   return (
@@ -11,8 +11,10 @@ function App() {
           {/* Page d'accueil */}
           <Route index element={<HomePage />} />
           
+          {/* Page Services */}
+          <Route path="services" element={<ServicesPage />} />
+          
           {/* Futures pages - décommenter quand prêtes */}
-          {/* <Route path="services" element={<ServicesPage />} /> */}
           {/* <Route path="projets" element={<ProjectsPage />} /> */}
           {/* <Route path="a-propos" element={<AboutPage />} /> */}
           {/* <Route path="contact" element={<ContactPage />} /> */}
