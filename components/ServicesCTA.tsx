@@ -46,8 +46,8 @@ export const ServicesCTA: React.FC = () => {
                 Contactez-nous dès maintenant
               </h3>
               <p className="text-brand-muted max-w-2xl mx-auto leading-relaxed">
-                Nos équipes sont disponibles du lundi au vendredi de 7h à 20h. 
-                Intervention sous 24h en cas d'urgence.
+                Nos équipes sont disponibles du lundi au vendredi de 7h à 18h. 
+                Intervention rapide pour vos urgences.
               </p>
             </div>
 
@@ -59,7 +59,7 @@ export const ServicesCTA: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-white font-medium">Horaires</p>
-                  <p className="text-brand-muted text-sm">Lun-Ven, 7h-20h</p>
+                  <p className="text-brand-muted text-sm">Lun-Ven, 7h-18h</p>
                 </div>
               </div>
               
@@ -68,7 +68,7 @@ export const ServicesCTA: React.FC = () => {
                   <Phone size={20} className="text-brand-accent" />
                 </div>
                 <div>
-                  <p className="text-white font-medium">Urgence 24h</p>
+                  <p className="text-white font-medium">Dépannage</p>
                   <p className="text-brand-muted text-sm">Intervention rapide</p>
                 </div>
               </div>

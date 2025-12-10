@@ -60,7 +60,7 @@ export const Header: React.FC = () => {
           <div className="flex flex-col items-end group cursor-pointer">
             <div className="flex items-center gap-2 text-brand-accent text-[10px] font-bold uppercase tracking-widest mb-0.5">
               <span className="w-1.5 h-1.5 bg-brand-accent rounded-full animate-pulse"></span>
-              Intervention 24h
+              Lun-Ven 7h-18h
             </div>
             <a href={`tel:${PHONE_NUMBER.replace(/\s/g, '')}`} className="text-base font-bold text-white group-hover:text-brand-accent transition-colors tracking-wider">
               {PHONE_NUMBER}

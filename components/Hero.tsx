@@ -94,7 +94,7 @@ export const Hero: React.FC = () => {
               className="group relative overflow-hidden bg-white text-brand-dark px-10 py-5 min-w-[220px] text-center transition-transform duration-500 hover:-translate-y-1"
             >
               <div className="absolute inset-0 w-full h-full bg-brand-accent translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-luxury"></div>
-              <span className="relative z-10 font-bold text-sm uppercase tracking-widest group-hover:text-brand-dark transition-colors">Urgence 24/7</span>
+              <span className="relative z-10 font-bold text-sm uppercase tracking-widest group-hover:text-brand-dark transition-colors">Appeler maintenant</span>
             </a>
             
             <a 

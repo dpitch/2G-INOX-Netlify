@@ -45,7 +45,7 @@ export const SERVICES: ServiceItem[] = [
 export const ENGAGEMENTS: EngagementItem[] = [
   {
     title: "Réactivité",
-    description: "Intervention dépannage sous 24h.",
+    description: "Intervention rapide, Lun-Ven 7h-18h.",
     icon: Clock
   },
   {

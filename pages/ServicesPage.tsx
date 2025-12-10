@@ -2,6 +2,9 @@ import React from 'react';
 import { PageHero } from '../components/PageHero';
 import { ServicesOverview } from '../components/ServicesOverview';
 import { ServiceDetailCard } from '../components/ServiceDetailCard';
+import { ServiceGridSection } from '../components/ServiceGridSection';
+import { ServiceStepsSection } from '../components/ServiceStepsSection';
+import { ServiceSplitSection } from '../components/ServiceSplitSection';
 import { ServicesCTA } from '../components/ServicesCTA';
 import { 
   KeyRound, 
@@ -9,7 +12,17 @@ import {
   Lock, 
   Shield, 
   Mailbox, 
-  Settings 
+  Settings,
+  ShieldCheck,
+  DoorOpen,
+  Key,
+  Scan,
+  Package,
+  PenTool,
+  Wrench,
+  Calendar,
+  CheckCircle,
+  RotateCw
 } from 'lucide-react';
 
 // Services overview data for the grid
@@ -140,69 +153,111 @@ export const ServicesPage: React.FC = () => {
         />
       </section>
 
-      {/* Service 4: Sécurité */}
-      <section id="securite">
-        <ServiceDetailCard 
-          number="04"
-          icon={Shield}
-          title="Renforcement et sécurité"
-          description="Renforcez la sécurité de vos accès avec des solutions conformes aux normes européennes. Protection adaptée pour commerces, immeubles et habitations."
-          features={[
-            'Pose de verrous 1 point et 3 points',
-            'Installation de serrures anti-panique pour portes de secours (normes EN)',
-            'Pose de protections anti-effraction supplémentaires',
-            'Remplacement et fourniture de serrures multipoints',
-            'Installation de poignées inox et protections de cylindres',
-          ]}
-          highlight="Toutes nos installations respectent les normes européennes en vigueur."
-          ctaText="Demander un devis"
-          ctaHref="#contact"
-          reversed
-          image="/img/u9737486426_A_perfectly_repaired_metal_fence_looking_brand_ne_4417c9a0-8869-45ad-9d9a-7eb47342023d_1.png"
-          imageAlt="Clôture métallique réparée"
-        />
-      </section>
+      {/* Service 4: Sécurité - Style Grid avec icônes */}
+      <ServiceGridSection 
+        id="securite"
+        number="04"
+        badge="Protection"
+        title="Renforcement"
+        titleAccent="et sécurité."
+        description="Renforcez la sécurité de vos accès avec des solutions conformes aux normes européennes. Protection adaptée pour commerces, immeubles et habitations."
+        items={[
+          {
+            icon: ShieldCheck,
+            title: 'Verrous multipoints',
+            description: 'Pose de verrous 1 point et 3 points pour une sécurité renforcée de vos accès.',
+          },
+          {
+            icon: DoorOpen,
+            title: 'Serrures anti-panique',
+            description: 'Installation conforme aux normes EN pour portes de secours et issues de secours.',
+          },
+          {
+            icon: Shield,
+            title: 'Anti-effraction',
+            description: 'Pose de protections supplémentaires et serrures multipoints haute sécurité.',
+          },
+          {
+            icon: Key,
+            title: 'Protections cylindres',
+            description: 'Installation de rosaces blindées et protections anti-arrachement.',
+          },
+          {
+            icon: Lock,
+            title: 'Poignées sécurisées',
+            description: 'Fourniture et pose de poignées inox et équipements anti-crochetage.',
+          },
+          {
+            icon: Scan,
+            title: 'Audit sécurité',
+            description: 'Analyse de vos points d\'accès et recommandations personnalisées.',
+          },
+        ]}
+        highlight="Toutes nos installations respectent les normes européennes en vigueur (EN 179, EN 1125)."
+        ctaText="Demander un audit gratuit"
+        ctaHref="#contact"
+      />
 
-      {/* Service 5: Boîtes aux lettres */}
-      <section id="boites">
-        <ServiceDetailCard 
-          number="05"
-          icon={Mailbox}
-          title="Boîtes aux lettres & gravures"
-          description="Remplacement, réparation et personnalisation de boîtes aux lettres. Service complet incluant la gravure de plaquettes nominatives pour immeubles et particuliers."
-          features={[
-            'Remplacement complet de boîtes aux lettres individuelles ou collectives',
-            'Réparation et changement de cylindre',
-            'Remplacement de portillon de boîte aux lettres et boîte à lait',
-            'Gravure personnalisée sur plaquettes nominatives',
-            'Fabrication de plaquettes gravées sur mesure',
-          ]}
-          ctaText="Nous contacter"
-          ctaHref="#contact"
-        />
-      </section>
+      {/* Service 5: Boîtes aux lettres - Style Split avec stat */}
+      <ServiceSplitSection 
+        id="boites"
+        number="05"
+        badge="Courrier & Signalétique"
+        icon={Mailbox}
+        title="Boîtes aux lettres & gravures"
+        description="Remplacement, réparation et personnalisation de boîtes aux lettres. Service complet incluant la gravure de plaquettes nominatives pour immeubles et particuliers."
+        features={[
+          'Remplacement complet de boîtes aux lettres individuelles ou collectives',
+          'Réparation et changement de cylindre de boîte aux lettres',
+          'Remplacement de portillon et boîte à lait',
+          'Gravure personnalisée sur plaquettes nominatives',
+          'Fabrication de plaquettes gravées sur mesure',
+        ]}
+        stat={{
+          value: '500',
+          label: 'Boîtes aux lettres\ninstallées ou réparées',
+        }}
+        ctaText="Nous contacter"
+        ctaHref="#contact"
+        image="/img/u9737486426_A_modern_clean_entrance_of_a_Swiss_apartment_buil_90162c95-28bb-4038-a92a-0fa16e233806_1.png"
+        imageAlt="Entrée d'immeuble avec boîtes aux lettres"
+      />
 
-      {/* Service 6: Entretien */}
-      <section id="entretien">
-        <ServiceDetailCard 
-          number="06"
-          icon={Settings}
-          title="Fermetures et entretien"
-          description="Installation, remplacement et entretien de systèmes de fermeture. Un entretien régulier garantit la longévité et le bon fonctionnement de vos installations."
-          features={[
-            'Ferme-portes : fourniture, remplacement et réglage de tous types',
-            'Service annuel d\'entretien de portes d\'entrée',
-            'Vérification, lubrification et réglages préventifs',
-            'Réparation de fermetures automatiques et portes battantes',
-          ]}
-          highlight="Programmez un entretien annuel pour éviter les pannes et prolonger la durée de vie de vos équipements."
-          ctaText="Planifier un entretien"
-          ctaHref="#contact"
-          reversed
-          image="/img/u9737486426_A_welder_in_a_workshop_working_on_a_stainless_ste_8cb99dae-b3f9-40f1-88db-74c3384aa5ae_3.png"
-          imageAlt="Soudeur en atelier"
-        />
-      </section>
+      {/* Service 6: Entretien - Style Steps/Timeline */}
+      <ServiceStepsSection 
+        id="entretien"
+        number="06"
+        badge="Maintenance"
+        title="Fermetures"
+        titleAccent="et entretien."
+        description="Installation, remplacement et entretien de systèmes de fermeture. Un entretien régulier garantit la longévité et le bon fonctionnement de vos équipements."
+        steps={[
+          {
+            icon: Calendar,
+            title: 'Prise de rendez-vous',
+            description: 'Planifiez votre visite d\'entretien annuelle selon vos disponibilités.',
+          },
+          {
+            icon: Wrench,
+            title: 'Diagnostic complet',
+            description: 'Inspection de tous les mécanismes : ferme-portes, charnières, serrures.',
+          },
+          {
+            icon: RotateCw,
+            title: 'Maintenance préventive',
+            description: 'Lubrification, réglages et remplacement des pièces d\'usure.',
+          },
+          {
+            icon: CheckCircle,
+            title: 'Rapport & suivi',
+            description: 'Compte-rendu détaillé et recommandations pour les années à venir.',
+          },
+        ]}
+        ctaText="Planifier un entretien"
+        ctaHref="#contact"
+        image="/img/u9737486426_A_welder_in_a_workshop_working_on_a_stainless_ste_8cb99dae-b3f9-40f1-88db-74c3384aa5ae_3.png"
+        imageAlt="Technicien en atelier"
+      />
 
       {/* Final CTA */}
       <ServicesCTA />

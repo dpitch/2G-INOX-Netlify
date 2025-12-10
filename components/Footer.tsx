@@ -51,9 +51,9 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li className="pt-4">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-red-500/10 border border-red-500/20 text-red-500 text-xs font-bold uppercase tracking-wide">
-                   <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
-                   Urgence 24/7
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-brand-accent/10 border border-brand-accent/20 text-brand-accent text-xs font-bold uppercase tracking-wide">
+                   <span className="w-1.5 h-1.5 rounded-full bg-brand-accent animate-pulse"></span>
+                   Lun-Ven 7h-18h
                 </div>
               </li>
             </ul>

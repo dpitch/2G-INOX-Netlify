@@ -4,8 +4,8 @@ import { ChevronDown, MessageCircleQuestion } from 'lucide-react';
 
 const FAQS = [
   {
-    question: 'Quel est le délai d\'intervention pour une urgence ?',
-    answer: 'Nous intervenons généralement sous 24h, et plus rapidement selon la localité pour les cas critiques (portes bloquées).',
+    question: 'Quels sont vos horaires d\'intervention ?',
+    answer: 'Nous sommes disponibles du lundi au vendredi de 7h à 18h. Pour les cas critiques (portes bloquées), nous intervenons le plus rapidement possible selon la localité.',
   },
   {
     question: 'Travaillez-vous avec les assurances ?',
