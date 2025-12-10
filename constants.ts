@@ -12,11 +12,14 @@ export const PHONE_NUMBER = "021 647 46 26";
 export const EMAIL = "info@2g-inox.ch";
 
 export const NAV_LINKS: NavItem[] = [
-  { label: 'Accueil', href: '#' },
-  { label: 'Services', href: '#services' },
-  { label: 'Projets', href: '#projets' },
-  { label: 'À propos', href: '#about' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Accueil', href: '/' },
+  { label: 'Services', href: '#services', isAnchor: true },      // Anchor sur la page d'accueil (pour l'instant)
+  { label: 'Projets', href: '#projets', isAnchor: true },        // Anchor sur la page d'accueil (pour l'instant)
+  { label: 'À propos', href: '#about', isAnchor: true },         // Anchor sur la page d'accueil (pour l'instant)
+  { label: 'Contact', href: '#contact', isAnchor: true },        // Anchor sur la page d'accueil (pour l'instant)
+  // Quand tu voudras des pages dédiées, change simplement:
+  // { label: 'Services', href: '/services' },
+  // { label: 'Projets', href: '/projets' },
 ];
 
 export const SERVICES: ServiceItem[] = [

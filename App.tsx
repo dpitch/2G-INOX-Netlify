@@ -1,37 +1,27 @@
 import React from 'react';
-import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { TrustBadges } from './components/TrustBadges';
-import { Services } from './components/Services';
-import { ForWho } from './components/ForWho';
-import { Process } from './components/Process';
-import { MetalHighlight } from './components/MetalHighlight';
-import { WhyUs } from './components/WhyUs';
-import { FAQ } from './components/FAQ';
-import { ServiceArea } from './components/ServiceArea';
-import { Footer } from './components/Footer';
-import { useLenis } from './hooks/useLenis';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Layout } from './components/Layout';
+import { HomePage } from './pages';
 
 function App() {
-  // Smooth scroll with Lenis
-  useLenis();
-
   return (
-    <div className="bg-brand-dark min-h-screen flex flex-col text-white font-sans selection:bg-brand-accent selection:text-white">
-      <Header />
-      <main className="flex-grow">
-        <Hero />
-        <TrustBadges />
-        <Services />
-        <ForWho />
-        <Process />
-        <MetalHighlight />
-        <WhyUs />
-        <FAQ />
-        <ServiceArea />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          {/* Page d'accueil */}
+          <Route index element={<HomePage />} />
+          
+          {/* Futures pages - décommenter quand prêtes */}
+          {/* <Route path="services" element={<ServicesPage />} /> */}
+          {/* <Route path="projets" element={<ProjectsPage />} /> */}
+          {/* <Route path="a-propos" element={<AboutPage />} /> */}
+          {/* <Route path="contact" element={<ContactPage />} /> */}
+          
+          {/* Page 404 - fallback vers accueil pour l'instant */}
+          <Route path="*" element={<HomePage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

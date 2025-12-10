@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Logo } from './Logo';
+import { NavLink } from './NavLink';
 import { PHONE_NUMBER, EMAIL, NAV_LINKS } from '../constants';
 import { Facebook, Instagram, Linkedin } from 'lucide-react';
 
@@ -10,7 +12,9 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-20">
           {/* Brand - 4 cols */}
           <div className="md:col-span-4 space-y-8">
-            <Logo size="lg" />
+            <Link to="/">
+              <Logo size="lg" />
+            </Link>
             <p className="text-brand-muted text-sm leading-relaxed max-w-xs">
               Construction Métallique & Serrurerie.<br/>
               Excellence technique suisse pour tous vos projets.
@@ -23,9 +27,10 @@ export const Footer: React.FC = () => {
             <ul className="space-y-4">
               {NAV_LINKS.map(link => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-brand-muted hover:text-white transition-colors text-sm">
-                    {link.label}
-                  </a>
+                  <NavLink 
+                    item={link} 
+                    className="text-brand-muted hover:text-white transition-colors text-sm"
+                  />
                 </li>
               ))}
             </ul>

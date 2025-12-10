@@ -3,6 +3,7 @@ import { LucideIcon } from 'lucide-react';
 export interface NavItem {
   label: string;
   href: string;
+  isAnchor?: boolean; // true for hash links (#services), false for routes (/services)
 }
 
 export interface ServiceItem {

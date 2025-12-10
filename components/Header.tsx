@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
 import { NAV_LINKS, PHONE_NUMBER } from '../constants';
 import { Logo } from './Logo';
+import { NavLink } from './NavLink';
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,6 +19,8 @@ export const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const closeMobileMenu = () => setIsMobileMenuOpen(false);
+
   return (
     <header 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-700 ease-luxury ${
@@ -28,7 +32,9 @@ export const Header: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6 lg:px-12 flex items-center justify-between">
         {/* Logo */}
         <div className={`transition-all duration-1000 ease-luxury ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}>
-          <Logo size="md" className="relative z-50" />
+          <Link to="/" onClick={closeMobileMenu}>
+            <Logo size="md" className="relative z-50" />
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
@@ -38,13 +44,13 @@ export const Header: React.FC = () => {
               key={link.label}
               className={`transition-all duration-1000 ease-luxury delay-[${index * 100}ms] ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`}
             >
-              <a 
-                href={link.href}
+              <NavLink 
+                item={link}
                 className="relative text-sm font-medium text-brand-muted hover:text-white transition-colors tracking-wide group py-2"
               >
                 {link.label}
                 <span className="absolute bottom-0 left-1/2 w-0 h-px bg-brand-accent transition-all duration-500 ease-luxury group-hover:w-full group-hover:left-0"></span>
-              </a>
+              </NavLink>
             </div>
           ))}
         </nav>
@@ -83,15 +89,13 @@ export const Header: React.FC = () => {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand-accent/5 to-brand-dark opacity-100"></div>
           <nav className="flex flex-col gap-8 text-center relative z-10">
             {NAV_LINKS.map((link, index) => (
-              <a 
+              <NavLink 
                 key={link.label} 
-                href={link.href}
-                onClick={() => setIsMobileMenuOpen(false)}
+                item={link}
+                onClick={closeMobileMenu}
                 className="text-4xl font-light text-white hover:text-brand-accent transition-colors opacity-0 animate-fade-in-up"
                 style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
-              >
-                {link.label}
-              </a>
+              />
             ))}
           </nav>
           <div className="w-12 h-px bg-brand-border my-12 relative z-10 opacity-0 animate-fade-in-up delay-300" style={{ animationFillMode: 'forwards' }}></div>
