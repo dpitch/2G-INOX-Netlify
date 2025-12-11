@@ -1,0 +1,21 @@
+{
+  "type": "Service",
+  "number": "02",
+  "title": "Construction métallique et soudure",
+  "shortDesc": "Fabrication et réparation de structures métalliques sur mesure.",
+  "description": "Fabrication, réparation et installation de toutes structures métalliques. Nos soudeurs qualifiés interviennent sur acier, inox et aluminium pour des réalisations durables.",
+  "icon": "Hammer",
+  "anchor": "#construction",
+  "features": [
+    "Réparation de barrières métalliques, portails, clôtures et grilles",
+    "Fabrication et pose de garde-corps et rampes sur mesure",
+    "Réparation et installation de grilles caillebotis",
+    "Soudure à l'électrode sur acier, inox et aluminium",
+    "Redressage de structures déformées",
+    "Découpage au chalumeau et ajustement sur mesure"
+  ],
+  "ctaText": "Demander un devis",
+  "ctaHref": "#contact",
+  "image": "/img/u9737486426_A_newly_installed_modern_stainless_steel_gate_for_011a244d-8a71-4bc0-8f97-c3f6e44a8aaa_1.png",
+  "imageAlt": "Portail en inox moderne installé"
+}

@@ -1,0 +1,20 @@
+{
+  "type": "Service",
+  "number": "05",
+  "title": "Boîtes aux lettres & gravures",
+  "shortDesc": "Remplacement, réparation et gravure de plaquettes nominatives.",
+  "description": "Remplacement, réparation et personnalisation de boîtes aux lettres. Service complet incluant la gravure de plaquettes nominatives pour immeubles et particuliers.",
+  "icon": "Mailbox",
+  "anchor": "#boites",
+  "features": [
+    "Remplacement complet de boîtes aux lettres individuelles ou collectives",
+    "Réparation et changement de cylindre de boîte aux lettres",
+    "Remplacement de portillon et boîte à lait",
+    "Gravure personnalisée sur plaquettes nominatives",
+    "Fabrication de plaquettes gravées sur mesure"
+  ],
+  "ctaText": "Nous contacter",
+  "ctaHref": "#contact",
+  "image": "/img/u9737486426_A_modern_clean_entrance_of_a_Swiss_apartment_buil_90162c95-28bb-4038-a92a-0fa16e233806_1.png",
+  "imageAlt": "Entrée d'immeuble avec boîtes aux lettres"
+}

@@ -1,0 +1,21 @@
+{
+  "type": "Service",
+  "number": "01",
+  "title": "Dépannage & Ouverture de portes",
+  "shortDesc": "Intervention rapide pour portes bloquées, clés perdues ou serrures défectueuses.",
+  "description": "Porte bloquée, clés perdues ou serrure défectueuse ? Nous intervenons rapidement pour vous dépanner et remettre votre porte en état de fonctionnement.",
+  "icon": "KeyRound",
+  "anchor": "#depannage",
+  "features": [
+    "Ouverture de portes suite à perte de clés ou blocage du mécanisme",
+    "Dépannage de portes palières, portes d'entrée et portes de cave",
+    "Intervention sur portes d'immeubles, magasins et bureaux",
+    "Réparation après effraction, redressage et remise en état",
+    "Découpage au chalumeau ou meulage si nécessaire"
+  ],
+  "highlight": "Intervention sous 24 heures en cas d'urgence.",
+  "ctaText": "Appeler pour un dépannage",
+  "ctaHref": "tel:0216474626",
+  "image": "/img/u9737486426_shot_of_a_professional_locksmiths_gloved_hand_ins_0b6dbe64-76ae-4bfb-b174-0bc8a504dc80_0.png",
+  "imageAlt": "Serrurier professionnel installant un cylindre"
+}

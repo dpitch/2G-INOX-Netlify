@@ -1,0 +1,20 @@
+{
+  "type": "Service",
+  "number": "04",
+  "title": "Renforcement et sécurité",
+  "shortDesc": "Solutions conformes aux normes européennes pour commerces et habitations.",
+  "description": "Renforcez la sécurité de vos accès avec des solutions conformes aux normes européennes. Protection adaptée pour commerces, immeubles et habitations.",
+  "icon": "Shield",
+  "anchor": "#securite",
+  "features": [
+    "Pose de verrous 1 point et 3 points pour une sécurité renforcée",
+    "Installation de serrures anti-panique conformes EN",
+    "Pose de protections supplémentaires et serrures multipoints",
+    "Installation de rosaces blindées et protections anti-arrachement",
+    "Fourniture et pose de poignées inox anti-crochetage",
+    "Audit sécurité et recommandations personnalisées"
+  ],
+  "highlight": "Toutes nos installations respectent les normes européennes en vigueur (EN 179, EN 1125).",
+  "ctaText": "Demander un audit gratuit",
+  "ctaHref": "#contact"
+}

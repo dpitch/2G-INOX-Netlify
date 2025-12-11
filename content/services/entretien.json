@@ -1,0 +1,19 @@
+{
+  "type": "Service",
+  "number": "06",
+  "title": "Fermetures et entretien",
+  "shortDesc": "Installation et maintenance de ferme-portes et systèmes automatiques.",
+  "description": "Installation, remplacement et entretien de systèmes de fermeture. Un entretien régulier garantit la longévité et le bon fonctionnement de vos équipements.",
+  "icon": "Settings",
+  "anchor": "#entretien",
+  "features": [
+    "Planifiez votre visite d'entretien annuelle",
+    "Inspection de tous les mécanismes : ferme-portes, charnières, serrures",
+    "Lubrification, réglages et remplacement des pièces d'usure",
+    "Compte-rendu détaillé et recommandations"
+  ],
+  "ctaText": "Planifier un entretien",
+  "ctaHref": "#contact",
+  "image": "/img/u9737486426_A_welder_in_a_workshop_working_on_a_stainless_ste_8cb99dae-b3f9-40f1-88db-74c3384aa5ae_3.png",
+  "imageAlt": "Technicien en atelier"
+}

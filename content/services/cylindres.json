@@ -1,0 +1,22 @@
+{
+  "type": "Service",
+  "number": "03",
+  "title": "Changement et pose de cylindres",
+  "shortDesc": "Remplacement et installation de cylindres sécurisés pour tous accès.",
+  "description": "Remplacement et installation de cylindres sécurisés pour tous types de portes et accès. Solutions standards et haute sécurité adaptées à vos besoins.",
+  "icon": "Lock",
+  "anchor": "#cylindres",
+  "features": [
+    "Cylindres pour boîtes aux lettres, portes palières et portes d'entrée",
+    "Cylindres pour portails, immeubles, magasins, caves et bureaux",
+    "Pose de cylindres pompiers et cylindres haute sécurité",
+    "Solutions anti-perçage et anti-crochetage",
+    "Mises en passe pour centraliser les accès (immeubles, copropriétés)",
+    "Remplacement express en cas de clé perdue"
+  ],
+  "highlight": "Nous vous conseillons sur le niveau de sécurité adapté à vos besoins.",
+  "ctaText": "Demander un devis",
+  "ctaHref": "#contact",
+  "image": "/img/u9737486426_A_modern_clean_entrance_of_a_Swiss_apartment_buil_90162c95-28bb-4038-a92a-0fa16e233806_1.png",
+  "imageAlt": "Entrée d'immeuble suisse moderne"
+}
