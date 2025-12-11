@@ -1,7 +1,7 @@
 {
     "type": "Service",
     "number": "01",
-    "title": "Dépannage & Ouverture de portesdsf",
+    "title": "Dépannage & Ouverture de portes",
     "shortDesc": "Intervention rapide pour portes bloquées, clés perdues ou serrures défectueuses.",
     "description": "Porte bloquée, clés perdues ou serrure défectueuse ? Nous intervenons rapidement pour vous dépanner et remettre votre porte en état de fonctionnement.",
     "icon": "KeyRound",
