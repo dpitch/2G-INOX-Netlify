@@ -122,15 +122,6 @@ export default defineStackbitConfig({
     })
   ],
 
-  // Configuration du preview
-  devCommand: "npm run dev -- --port {PORT}",
-  experimental: {
-    ssg: {
-      name: "Vite",
-      logPatterns: {
-        up: ["Local:"]
-      },
-      passthrough: ["/src/**", "/@vite/**", "/node_modules/**"]
-    }
-  }
+  // Configuration du preview pour Netlify Visual Editor
+  devCommand: "npm run dev",
 });
