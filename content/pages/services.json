@@ -1,19 +1,19 @@
 {
-  "type": "ServicesPage",
-  "title": "Nos Services | 2G-INOX",
-  "metaDescription": "Solutions complètes pour professionnels et particuliers. Du dépannage d'urgence aux installations sur mesure.",
-  "hero": {
-    "badge": "Nos services",
-    "title": "Serrurerie & Construction",
-    "titleAccent": "métallique.",
-    "subtitle": "Solutions complètes pour professionnels et particuliers. Du dépannage d'urgence aux installations sur mesure dans tout le canton de Vaud."
-  },
-  "services": [
-    "content/services/depannage.json",
-    "content/services/construction.json",
-    "content/services/cylindres.json",
-    "content/services/securite.json",
-    "content/services/boites-aux-lettres.json",
-    "content/services/entretien.json"
-  ]
+    "type": "ServicesPage",
+    "title": "Nos Services | 2G-INOX",
+    "metaDescription": "Solutions complètes pour professionnels et particuliers. Du dépannage d'urgence aux installations sur mesure. ",
+    "hero": {
+        "badge": "Nos services",
+        "title": "Serrurerie & Construction",
+        "titleAccent": "métallique.",
+        "subtitle": "Solutions complètes pour professionnels et particuliers. Du dépannage d'urgence aux installations sur mesure dans tout le canton de Vaud."
+    },
+    "services": [
+        "content/services/depannage.json",
+        "content/services/construction.json",
+        "content/services/cylindres.json",
+        "content/services/securite.json",
+        "content/services/boites-aux-lettres.json",
+        "content/services/entretien.json"
+    ]
 }
