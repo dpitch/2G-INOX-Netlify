@@ -9,6 +9,11 @@ export default defineConfig(({ mode }) => {
         port: 5173,
         host: '0.0.0.0',
         strictPort: true,
+        allowedHosts: [
+          'localhost',
+          '.netlify.app',
+          'devserver-main--2g-test.netlify.app'
+        ],
       },
       plugins: [react()],
       define: {
